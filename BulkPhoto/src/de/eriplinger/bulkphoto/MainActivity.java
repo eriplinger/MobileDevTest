@@ -30,5 +30,4 @@ public class MainActivity extends Activity
 		// TODO: Implement this method
 		return super.findViewById(id);
 	}
-	
 }
