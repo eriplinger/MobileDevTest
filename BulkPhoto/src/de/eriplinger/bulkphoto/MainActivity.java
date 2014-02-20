@@ -14,6 +14,14 @@ public class MainActivity extends Activity
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+		
+
+		Button capture = (Button) findViewById(R.id.bulkphotoguiButton1);
+		capture.setOnClickListener(new OnClickListener(){
+				public void onClick(View p1){
+					finish();
+				}
+			});
     }
 
 	@Override
@@ -23,10 +31,4 @@ public class MainActivity extends Activity
 		return super.findViewById(id);
 	}
 	
-	Button capture = (Button) findViewById(R.id.bulkphotoguiButton1);
-	capture.setOnClickListener(new OnClickListener(){
-		public void onClick(View p1){
-			finish();
-		}
-	});
 }
